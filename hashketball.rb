@@ -282,5 +282,6 @@ def player_with_longest_name
       end
     end
   end
+  return longest_name
 end
 # Write your code here!

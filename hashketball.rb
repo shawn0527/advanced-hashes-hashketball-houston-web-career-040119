@@ -279,7 +279,7 @@ def player_with_longest_name
           if
             longest_name == ""
             longest_name = player_name
-          elsif
+          else
             longest_name < player_name
             longest_name = player_name
           end

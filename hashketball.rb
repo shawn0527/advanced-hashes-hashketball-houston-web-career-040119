@@ -289,4 +289,35 @@ def player_with_longest_name
   end
   return longest_name
 end
+
+def long_name_steals_a_ton?
+  player_with_longest_name
+  def most_steals
+    steals_array = []
+    game_hash.each do |location, team_data|
+      team_data.each do |attribute, data|
+        if attribute == :players
+          data.each do |player_name, player_stats|
+            steals_array.push(player_stats[:steals])
+          end
+        end
+      end
+    end
+    most_steals_conceded = steals_array.sort![steals_array.length-1]
+    game_hash.each do |location, team_data|
+      team_data.each do |attribute, data|
+        if attribute == :players
+          data.each do |player_name, player_stats|
+            if player_stats[:steals] == most_steals_conceded
+              return player_name
+            end
+          end
+        end
+      end
+    end
+    most_steals
+    if player_with_longest_name == most_steals
+      return true
+    end
+  end
 # Write your code here!

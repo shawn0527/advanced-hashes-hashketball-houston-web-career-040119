@@ -255,6 +255,7 @@ def winning_team
     end
   end
   away_points_scored = []
+  total_away_points = away_points_scored.sum
   game_hash[:away].each do |attribute, data|
     if attribute == :players
       data.each do |player_name, player_stats|

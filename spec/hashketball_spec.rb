@@ -161,7 +161,7 @@ describe 'hashketball' do
         :number => 0,
         :shoe => 16,
         :points => 22,
-        :rebounds => 11,
+        :rebounds => 12,
         :assists => 12,
         :steals => 3,
         :blocks => 1,
@@ -239,7 +239,7 @@ describe 'hashketball' do
   describe '#big_shoe_rebounds' do
 
     it 'returns the number of rebounds of the player with the biggest shoe size' do
-      expect(big_shoe_rebounds).to eq(12)
+      expect(big_shoe_rebounds).to eq(99)
     end
 
   end

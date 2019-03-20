@@ -245,6 +245,7 @@ end
 
 def winning_team
   home_points_scored = []
+  total_home_points = home_points_scored.sum
   game_hash[:home].each do |attribute, data|
     if attribute == :players
       data.each do |player_name, player_stats|

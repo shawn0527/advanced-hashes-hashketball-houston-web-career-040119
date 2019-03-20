@@ -260,7 +260,7 @@ def winning_team
     if attribute == :players
       data.each do |player_name, player_stats|
         away_points_scored.push(player_stats[:points])
-        total_away_points = away_points_scored.sum
+        total_away_points
       end
     end
   end

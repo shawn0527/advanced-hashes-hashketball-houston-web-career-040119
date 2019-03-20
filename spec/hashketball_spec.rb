@@ -161,7 +161,7 @@ describe 'hashketball' do
         :number => 0,
         :shoe => 16,
         :points => 22,
-        :rebounds => 11,
+        :rebounds => 12,
         :assists => 12,
         :steals => 3,
         :blocks => 1,

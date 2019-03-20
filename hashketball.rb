@@ -262,7 +262,11 @@ def winning_team
     end
   end
   total_away_points = away_points_scored.sum
-return total_home_points
+  if total_home_points > total_away_points
+    return game_hash[:home][:team_name]
+  else
+    return game_hash[:away][:team_name]
+  end
 end
 
 
